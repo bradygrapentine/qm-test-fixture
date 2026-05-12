@@ -1,0 +1,7 @@
+name: always-fails
+on: [pull_request]
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "intentional"; exit 1
